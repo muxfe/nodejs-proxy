@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-proxy",
+  "version": "0.9",
+  "description": "a http proxy with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js",
+    "restart": "pm2 restart index.js",
+    "stop": "pm2 stop index.js",
+    "monit": "pm2 monit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "proxy",
+    "http"
+  ],
+  "private": true,
+  "author": "muxfe",
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "^1.16.2",
+    "pm2": "^2.4.1"
+  }
+}
